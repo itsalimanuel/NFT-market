@@ -1,16 +1,15 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
+ <NavComponents/>
   <router-view />
 </template>
 
 <style lang="scss">
+body{
+  font-family: 'Sora';
+  font-weight: 200;
+  overflow-x: hidden;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
 }
@@ -28,3 +27,9 @@
   }
 }
 </style>
+<script>
+import NavComponents from "@/views/components/nav-components";
+export default {
+  components: { NavComponents }
+}
+</script>
