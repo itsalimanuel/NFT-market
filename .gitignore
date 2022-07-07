@@ -23,4 +23,4 @@ pnpm-debug.log*
 *.sw?
 
 # remove the src
-src
+#src
